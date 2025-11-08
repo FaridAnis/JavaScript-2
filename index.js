@@ -24,28 +24,20 @@ console.log("La moyenne est", M);
 
 if (M >= 10) {
   console.log("ناجح");
+  switch (true) {
+    case M <= 12:
+      console.log("متوسط");
+      break;
+    case M <= 14:
+      console.log("فوق المتوسط");
+      break;
+    case M <= 16:
+      console.log("جيد");
+      break;
+    case M > 16:
+      console.log("ممتاز");
+      break;
+  }
 } else {
   console.log("راسب");
-}
-
-switch (true) {
-  case M < 10:
-    console.log("لاشيئ");
-    break;
-    
-  case M <= 12:
-    console.log("متوسط");
-    break;
-
-  case M <= 14:
-    console.log("فوق المتوسط");
-    break;
-
-  case M <= 16:
-    console.log("جيد");
-    break;
-
-  case M > 16:
-    console.log("ممتاز");
-    break;
 }
