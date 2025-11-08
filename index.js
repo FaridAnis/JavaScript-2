@@ -29,6 +29,10 @@ if (M >= 10) {
 }
 
 switch (true) {
+  case M < 10:
+    console.log("لاشيئ");
+    break;
+    
   case M <= 12:
     console.log("متوسط");
     break;
